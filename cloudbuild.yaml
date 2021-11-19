@@ -1,7 +1,10 @@
 steps:
-- name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy"]
-timeout: "1600s"
-options:
-  logging: CLOUD_LOGGING_ONLY
-
+- name: node
+  entrypoint: yarn
+  args: ['install']
+- name: node
+  entrypoint: yarn
+  args: ['test']
+- name: node
+  entrypoint: yarn
+  args: ['run', 'build']
