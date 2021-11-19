@@ -7,6 +7,6 @@ steps:
   args: ['run', 'build']
 - name: gcr.io/google.com/cloudsdktool/cloud-sdk
   entrypoint: bash
-  dir: '.',
+  dir: '/',
   args: ['gcloud', 'app', 'deploy']
 timeout: '1600s'
