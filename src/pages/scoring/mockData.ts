@@ -20,5 +20,12 @@ export default [
         price: { total: 4158, perNight: 440, currency: 'EUR' },
         images: [{ url: "https://a0.muscache.com/im/pictures/f211dec0-756c-4cb3-9c23-d6d3575e6f72.jpg?im_w=1200" }],
         externalUrl: "https://www.airbnb.de/rooms/46365893"
+    },
+    {
+        id: 'a7wr73gf023ln2f3i-23flasdfj0293f',
+        name: 'Split rustic house on the hill for 10 people',
+        price: { total: 4205, perNight: 446, currency: 'EUR' },
+        images: [{ url: "https://a0.muscache.com/im/pictures/e5b7ad33-ff14-4cff-b8a3-23c3c53afb65.jpg?im_w=1200" }],
+        externalUrl: "https://www.airbnb.de/rooms/17114847"
     }
 ]
