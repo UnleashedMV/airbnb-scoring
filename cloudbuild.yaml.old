@@ -1,0 +1,27 @@
+#steps:
+#- name: node
+#  entrypoint: yarn
+#  args: ['install']
+#- name: node
+#  entrypoint: yarn
+#  args: ['run', 'build']
+"steps": [
+        {
+            "name": "node",
+            "entrypoint": "yarn",
+            "args": ["--cwd", "client", "install"]
+        },
+        {
+            "name": "node",
+            "dir": "client",
+            "entrypoint": "yarn",
+            "args": ["run", "build"]
+        },
+        {
+            "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
+            "entrypoint": "bash",
+            "dir": "client",
+            "args": ["gcloud", "app", "deploy"]
+        }
+    ],
+    "timeout": "1600s"
