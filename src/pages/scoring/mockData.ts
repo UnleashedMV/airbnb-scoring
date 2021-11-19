@@ -13,5 +13,13 @@ export default [
         images: [{ url: "https://a0.muscache.com/im/pictures/f3e3a495-aa24-4804-a1f1-a270e30ff039.jpg?im_w=1200" }],
         externalUrl: "https://www.airbnb.de/rooms/48292179/"
 
+    },
+    {
+        id: '234wdf023ln2f3i-23flasdfj0293f',
+        name: 'Villa Nina - moderna novoizgrađena vila s bazenom',
+        price: { total: 4158, perNight: 440, currency: 'EUR' },
+        images: [{ url: "https://a0.muscache.com/im/pictures/f211dec0-756c-4cb3-9c23-d6d3575e6f72.jpg?im_w=1200" }],
+        externalUrl: "https://www.airbnb.de/rooms/46365893"
+
     }
 ]
