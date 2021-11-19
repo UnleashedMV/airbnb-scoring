@@ -6,7 +6,6 @@ steps:
   entrypoint: yarn
   args: ['run', 'build']
 - name: gcr.io/google.com/cloudsdktool/cloud-sdk
-  entrypoint: bash
-  dir: '/',
-  args: ['gcloud', 'app', 'deploy']
+  entrypoint: gcloud
+  args: ['app', 'deploy']
 timeout: '1600s'
