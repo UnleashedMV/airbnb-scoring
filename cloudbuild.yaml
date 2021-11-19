@@ -1,7 +1,73 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@UnleashedMV 
+GoogleCloudPlatform
+/
+cloud-build-samples
+Public
+7
+25301
+Code
+Issues
+2
+Pull requests
+Actions
+Projects
+Security
+Insights
+cloud-build-samples/node-example-yarn/cloudbuild.yaml
+@dinagraves
+dinagraves Adding region tags to node samples
+Latest commit f2eed48 on 21 Sep
+ History
+ 3 contributors
+@dinagraves@nityaravi@oflisback
+ 29 lines (28 sloc)  857 Bytes
+   
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# [START cloudbuild_yarn_node]
 steps:
+# Install dependencies
 - name: node
   entrypoint: yarn
   args: ['install']
+# Run tests
+- name: node
+  entrypoint: yarn
+  args: ['test']
+# Run custom commands
 - name: node
   entrypoint: yarn
   args: ['run', 'build']
+# [END cloudbuild_yarn_node]
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
