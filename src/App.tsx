@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Router, ReactLocation, Link, Outlet } from "react-location";
 import { Box, NailsApp } from "react-nails";
 

@@ -1,6 +1,5 @@
-import { get } from 'lodash'
 import React, { FC, ReactElement, useState } from 'react'
-import { addThemeComponent, Box, Button, Column, Filler, Icon, Inline, Row, Text, Types } from 'react-nails'
+import { addThemeComponent, Box, Button, Column, Filler, Icon, Row, Text, Types } from 'react-nails'
 import styled, { css } from 'styled-components'
 
 addThemeComponent((theme: any) => ['block', {
@@ -50,7 +49,7 @@ const BlockGroupRow = styled(Row).attrs(() => ({
     space: 'medium',
 }))`
     padding-right: 1.25em;
-    ${(p:any) => p.noPadding && css`
+    ${(p: any) => p.noPadding && css`
         padding: 0;
     `}
 `
@@ -114,7 +113,7 @@ const BlockSubHeader = styled.div`
 `
 
 interface IBlockHeader {
-    icon?: string 
+    icon?: string
     label?: ReactElement | string
     noVerticalPadding?: boolean
     noRightPadding?: boolean
@@ -136,7 +135,7 @@ const BlockHeader: FC<any> = ({ icon, label, children, ...rest }) => (
     </BlockHeaderContainer>
 )
 
-const Block = (props:any) => (
+const Block = (props: any) => (
     <BlockContainer {...props} />
 )
 
@@ -151,7 +150,7 @@ Block.Content = BlockContent
 
 export default Block
 
-export const BlockLabelDataRow = ({ label, children, }:any) => (
+export const BlockLabelDataRow = ({ label, children, }: any) => (
     <Block.Row>
         <Filler>
             <Block.Label>
@@ -172,10 +171,10 @@ const CollapseChildContainer = styled.div`
     display: ${(p: any) => (p.isCollapsed ? 'none' : 'block')};
 `
 
-export const CollapseBlock = ({ header, initialCollapse = false, onToggle = (e:any) => null, children, }: any) => {
+export const CollapseBlock = ({ header, initialCollapse = false, onToggle = (e: any) => null, children, }: any) => {
     const [collapse, setCollapse,] = useState<any>(initialCollapse)
 
-    const onToggleGroup = (newCollapse:any) => {
+    const onToggleGroup = (newCollapse: any) => {
         setCollapse(newCollapse)
         if (!newCollapse) {
             onToggle(newCollapse)
@@ -200,7 +199,7 @@ export const CollapseBlock = ({ header, initialCollapse = false, onToggle = (e:a
 export const CollapseStatusBlock = ({
     header, statusBag, statusDate, initialCollapse, onToggle, children,
     processingStateId, statusShowText = false,
-}:any) => (
+}: any) => (
     <CollapseBlock
         header={(
             <Box width="35%">
@@ -211,10 +210,10 @@ export const CollapseStatusBlock = ({
     </CollapseBlock>
 )
 
-export const CloseableBlock = ({ header, initialClosed = false, onToggle = (e:any) => null, children, }:any) => {
+export const CloseableBlock = ({ header, initialClosed = false, onToggle = (e: any) => null, children, }: any) => {
     const [closed, setClosed,] = useState(initialClosed)
 
-    const onToggleGroup = (newClosed:any) => {
+    const onToggleGroup = (newClosed: any) => {
         setClosed(newClosed)
         if (!newClosed) {
             onToggle(newClosed)

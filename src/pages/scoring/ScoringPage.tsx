@@ -55,7 +55,7 @@ const ScoringPage = () => {
                 {scoringData.map((data, idx) =>
                 (
                     <Block key={idx}>
-                        <Block.Header label={<a target="_blank" href={data.externalUrl}>{data.name} </a>}>
+                        <Block.Header label={<a target="_blank" href={data.externalUrl} rel="noopener noreferrer">{data.name} </a>}>
                             <Box>
                                 <Row itemSpace={Types.SpacingType.Large}>
                                     <Icon icon="thumbs-down" onClick={() => onVote(data, 'down')} />
