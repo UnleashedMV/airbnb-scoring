@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
+    "start:dev": "react-scripts start",
     "build": "react-scripts --openssl-legacy-provider build",
     "build:local": "react-scripts build",
     "test": "react-scripts test",
