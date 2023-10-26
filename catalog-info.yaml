@@ -4,6 +4,7 @@ metadata:
   name: airbnb-scoring
   annotations:
     github.com/project-slug: UnleashedMV/airbnb-scoring
+    backstage.io/techdocs-ref: value
 spec:
   type: other
   lifecycle: unknown
